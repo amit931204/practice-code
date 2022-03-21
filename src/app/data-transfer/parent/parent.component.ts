@@ -9,11 +9,10 @@ import { ChildComponent } from '../child/child.component';
 export class ParentComponent implements OnInit, AfterViewInit {
 
   msgsendtochild ="parent to child data";
-  @ViewChild(ChildComponent) child:any;
+  @ViewChild(ChildComponent) child:any; //second way to send data
 
   child_data_res(){
     console.log('child', this.child.child_data);
-    
   }
   get_child_data(value:any){
     console.log('data', value);

@@ -18,7 +18,7 @@ import { Comp2Component } from './data-transfer/comp2/comp2.component';
     ChildComponent,
     CustomStyleDirective,
     Comp1Component,
-    Comp2Component
+    Comp2Component,
   ],
   imports: [
     BrowserModule,
