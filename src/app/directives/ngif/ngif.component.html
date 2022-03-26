@@ -2,6 +2,15 @@
     <p>ngif works!</p>
     <button class="btn btn-primary" (click)="onCreateBlock()">Create Block</button>
     <!-- <div *ngIf="true">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, laborum!</div> -->
-    <div *ngIf="isValid">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, laborum!</div>
-    <div>No Block has been created</div>
+    <!-- use of "else" & "then" in *ngIf  -->
+    <div *ngIf="isValid; then thenblock else elseblock"></div>
+    <ng-template #thenblock>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, laborum!( if condition true )            
+        </div>
+    </ng-template>
+    <ng-template #elseblock>
+        <div>No Block has been created(if condition false)</div>
+    </ng-template>
+    
 </div>

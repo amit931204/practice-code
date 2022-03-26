@@ -8,7 +8,7 @@ import { ChildComponent } from '../child/child.component';
 })
 export class ParentComponent implements OnInit, AfterViewInit {
 
-  msgsendtochild ="parent to child data";
+  msgsendtochild ="This is parent to child msg";
   @ViewChild(ChildComponent) child:any; //second way to send data
 
   child_data_res(){
