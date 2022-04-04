@@ -9,6 +9,7 @@ import { ChildComponent } from './data-transfer/child/child.component';
 import { CustomStyleDirective } from './custom-style.directive';
 import { Comp1Component } from './data-transfer/comp1/comp1.component';
 import { Comp2Component } from './data-transfer/comp2/comp2.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { Comp2Component } from './data-transfer/comp2/comp2.component';
     CustomStyleDirective,
     Comp1Component,
     Comp2Component,
+    PageNotFoundComponent,
   ],
   imports: [
     BrowserModule,
