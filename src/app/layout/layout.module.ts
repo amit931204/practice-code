@@ -14,6 +14,7 @@ import { CommanModule } from '../comman/comman.module';
     CommonModule,
     CommanModule,
     LayoutRoutingModule
-  ]
+  ],
+  providers:[]
 })
 export class LayoutModule { }
