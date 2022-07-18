@@ -1,2 +1,41 @@
 <app-header></app-header>
-<p>dashboard works!</p>
+<div class="container">
+    <p class="text-center py-3">dashboard works! [<strong> Use of ng-content in given below four card comes data through card </strong>]</p>
+
+    <!-- use of "ng-content" below code and card-component -->
+
+    <div class="row text-center">
+        <div class="col-md-6">
+            <!-- <ng-content>Laptops</ng-content> -->
+            <app-card>
+                <h5 class="card-title">Laptop</h5>
+                <p class="cart-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, nihil?</p>
+                <a routerLink="javascript:void(0);" class="btn btn-primary">Know More about Laptop</a>
+            </app-card>
+        </div>
+        <div class="col-md-6">
+            <app-card>
+                <h5 class="card-title">Mobile</h5>
+                <p class="cart-text">Lorem ipsupisicing elit. Esse, nihil?</p>
+                <a routerLink="javascript:void(0);" class="btn btn-primary">Know More about Mobile</a>
+            </app-card>
+        </div>
+        <div class="col-md-6">
+            <app-card>
+                <h5 class="card-title">i-pad</h5>
+                <p class="cart-text">Dolor sit amet consectetur adipisicing elit. Esse, nihil?</p>
+                <a routerLink="javascript:void(0);" class="btn btn-primary">Know More about i-pad</a>
+            </app-card>
+        </div>
+        <div class="col-md-6">
+            <app-card>
+                <h5 class="card-title">Tv</h5>
+                <p class="cart-text">Ipsum dolor sit amet consectetur adipisicing elit. Esse, nihil?</p>
+                <a routerLink="javascript:void(0);" class="btn btn-primary">Know More about tv</a>
+            </app-card>
+        </div>
+    </div>
+
+    <!-- Use of "ng-content" code above -->
+
+</div>

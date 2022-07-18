@@ -1,2 +1,28 @@
 <app-header></app-header>
-<p>ngfor works!</p>
+<div class="main">
+    <h3>Use of <a href="https://www.youtube.com/watch?v=itG2hii60bg">ng-container</a> with *ngFor and *ngIf</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, exercitationem?</p>
+    <div class="prod">
+        <!-- ng-container use of here where remove some extra div and tags -->
+        <ng-container *ngIf="productsName">
+            <div *ngFor="let proitem of products">
+                {{proitem.name}}
+            </div>
+        </ng-container>
+    </div>
+
+
+    <!-- Use of ng-tamplate below -->
+
+    <label class="mt-3">Amit Details below</label>
+
+    <ng-container *ngIf="amit.length!=''; else elseBlock">
+        <ng-container *ngFor="let arr of amit">
+            <h3>{{arr.name}}</h3>
+        </ng-container>
+    </ng-container>
+    <ng-template #elseBlock>
+        <h3>No content</h3>
+    </ng-template>
+
+</div>

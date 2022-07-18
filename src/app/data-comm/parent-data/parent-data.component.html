@@ -1,0 +1,54 @@
+<app-header></app-header>
+<div class="container">
+    <div class="text-center">
+        <p>parent-data works!</p>
+        <h4>Data-Communication between two component</h4>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="d-flex justify-content-evenly">
+                <div class="card">
+                    <img src="assets/images/laptop.jpg" height="100" alt="Laptop">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5>Laptop</h5>
+                            <button href="" class="btn btn-success" (click)="onSelectProduct('Laptop')">Select this product</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/tv.jpg" height="100" alt="Mobile">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5>TV</h5>
+                            <button href="" class="btn btn-success" (click)="onSelectProduct('TV')">Select this product</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/washing-machine.jpg" height="100" alt="Mobile">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5>Washing Machine</h5>
+                            <button href="" class="btn btn-success" (click)="onSelectProduct('Washing Machine')">Select this product</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/images/mobile.jpg" height="100" alt="Mobile">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h5>Mobile</h5>
+                            <button href="" class="btn btn-success" (click)="onSelectProduct('Mobile')">Select this product</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 my-4 bg-success text-white text-center py-4">
+            <h2 *ngIf="!productSelected">Please select any product</h2>
+            <h2 *ngIf="productSelected">{{selectedProduct}} is selected</h2>
+            <button class="btn btn-secondary">Add to cart</button>
+        </div>
+    </div> 
+</div>

@@ -1,0 +1,28 @@
+/* #container {
+    height: 400px;
+    min-width: 320px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+.chartstyle{
+    width: 600px;
+    overflow-x: scroll;
+} */
+.chartWrapper {
+    position: relative;
+}
+
+.chartWrapper > canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+.chartAreaWrapper {
+    width: 600px;
+    overflow-x: scroll;
+}
+
+/* .bb{
+     overflow-x: scroll;
+  } */

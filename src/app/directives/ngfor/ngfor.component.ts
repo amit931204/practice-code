@@ -12,4 +12,16 @@ export class NgforComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  productsName : boolean=true;
+
+  products:any=[
+  {name: "Mobile"},
+  {name: "Laptop"},
+  {name: "TV"},
+  {name: "Washing Machine"}
+ ]
+
+//  Use of ng-template below
+ amit:any=[]
+
 }

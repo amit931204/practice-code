@@ -1,3 +1,4 @@
+<app-header></app-header>
 <p appCustomStyle>Parent works!</p>
 <app-child [msgrecieveformparent]="msgsendtochild" (senddata_fromchild)="get_child_data($event)"></app-child>
 <button class="btn btn-primary" (click)="child_data_res()">Msg from Child</button>
